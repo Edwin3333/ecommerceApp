@@ -119,7 +119,7 @@ const ProductList = function () {
   }, [])
 
 
-
+//laptop
   /* GET ALL PRODUCTS */
   const fetchData = () => {
     fetch(`${process.env.REACT_APP_API_URL}/products/all`, {
@@ -502,9 +502,10 @@ const ProductList = function () {
                       <Form.Select aria-label="Product Category" value={productCategories} onChange={e => setProductCategories(e.target.value)}
                         required>
                         <option>Product Category</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Mobile">Mobile</option>
                         <option value="Laptop">Laptop</option>
-                        <option value="Desktop">Desktop</option>
-                        <option value="Peripheral">Peripheral</option>
+                         <option value="Others">Others</option>                    
                       </Form.Select>
                     </Form.Group>
                     <Form.Group controlId="productBrand" className="mb-3">

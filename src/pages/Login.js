@@ -45,7 +45,7 @@ const Login = () => {
             localStorage.setItem("token", data.access);
 
             Swal.fire({
-              title: `Hi ${data.firstName} Welcome to our website`,
+              title: `Hi ${data.firstName} Welcome to WinShoP`,
               icon: "success",
               text: "Enjoy your shopping!"
             });
@@ -111,7 +111,7 @@ const Login = () => {
   return (
     (user.id) ?
 
-      (user.isAdmin === true) ? <Navigate to="/dashboard" /> : <Navigate to="/products" />
+      (user.isAdmin === true) ? <Navigate to="/dashboard" /> : <Navigate to="/" />
       :
       <>
         <div className="container w-50 my-5">
