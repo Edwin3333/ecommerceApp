@@ -7,7 +7,7 @@ const AppNavbar = () => {
     <Navbar variant="dark" className="AppNav justify-content-center" >
       <Nav activeKey="/home">
         <Nav.Item>
-          <Nav.Link as={NavLink} to="/entertainment">Home Entertainment</Nav.Link>
+          <Nav.Link as={NavLink} to="/entertainment">Entertainment</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={NavLink} to="/mobile">Mobile Phones</Nav.Link>
@@ -16,7 +16,7 @@ const AppNavbar = () => {
           <Nav.Link as={NavLink} to="/laptop">Laptops</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={NavLink} to="/others">Parts & Accessories</Nav.Link>
+          <Nav.Link as={NavLink} to="/others">Others</Nav.Link>
         </Nav.Item>
       </Nav>
     </Navbar>
